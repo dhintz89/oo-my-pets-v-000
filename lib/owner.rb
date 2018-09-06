@@ -1,16 +1,12 @@
 class Owner
+  #Attributes:
   attr_accessor :pets, :name
   attr_reader :species
   @@all = []
   
+  #Class Methods:
   def self.all
     @@all
-  end
-  
-  def initialize(species)
-    @pets = {cats: [], dogs: [], fishes: []}
-    @species = species
-    @@all << self
   end
   
   def self.count
@@ -21,13 +17,26 @@ class Owner
     @@all.clear
   end
   
+
+  def initialize(species)
+    @pets = {cats: [], dogs: [], fishes: []}
+    @species = species
+    @@all << self
+  end
+  
+  #Instance Methods:
+  def say_species
+    "I am a #{@species}."
+  end
+  
   def buy_fish(name)
     fish = Fish.new(name)
     self.pets[:fishes] << fish
   end
   
-  def say_species
-    "I am a #{@species}."
+  def buy_cat(name)
+    cat = Cat.new(name)
+    @pets[:cats] << cat
   end
     
   
