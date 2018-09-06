@@ -66,6 +66,5 @@ class Owner
       pet_list.clear
     end
   end
-  end
   
 end
