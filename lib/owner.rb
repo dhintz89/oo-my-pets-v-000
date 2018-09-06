@@ -57,6 +57,7 @@ class Owner
   end
   
   def list_pets
-    
+    @pets.values.flatten
+  end
   
 end
