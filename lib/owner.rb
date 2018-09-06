@@ -1,3 +1,7 @@
 class Owner
-  # code goes here
+  
+  @@all = []
+  
+  def reset_owners
+    @@all.clear
 end
