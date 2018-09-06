@@ -25,6 +25,10 @@ class Owner
     fish = Fish.new(name)
     @pets[fish] << fish
   end
+  
+  def say_species
+    @species
+  end
     
   
 end
