@@ -2,6 +2,10 @@ class Owner
   
   @@all = []
   
+  def self.all
+    @@all
+  end
+  
   def initialize
     @pets = {cat: [], dog: [], fish: []}
     @@all << self
