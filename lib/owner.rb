@@ -3,6 +3,7 @@ class Owner
   @@all = []
   
   def initialize
+    @pets = {}
     @@all << self
   end
   
