@@ -13,11 +13,11 @@ class Owner
     @@all << self
   end
   
-  def owner_count
+  def self.count
     @@all.length
   end
   
-  def reset_owners
+  def self.reset_all
     @@all.clear
   end
   
